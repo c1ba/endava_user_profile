@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+html, body{
+    margin: auto;
+    padding: auto;
+    background-color: #EBEBEB;
+}
+
+body{
+    animation: fade_out 2s forwards;
+}
+
+header {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 100px auto 25px auto;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    color: #1B1B1B;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
+}
+
+header h1 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+header h3 {
+    font-weight: 200;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+section{
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+footer{
+    margin-top: 75px;
+}
+
+.detail_section{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   border-top: solid #B4B4B4;
+   border-width: 1px;
+   padding: 20px;
+}
+
+.detail_text {
+    color: #7E7E7E;
+}
+
+@media screen and (max-width: 1656px){
+    section{
+        width: 517.8px;
+    }
+
+    header{
+        width: 517.8px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    section{
+        width: 100%;
+    }
+    
+    header{
+        width: 100%;
+    }
+}
+
+@keyframes fade_out{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
